@@ -1,0 +1,249 @@
+{
+  "calibration_dataset_sha256": "337642e364714b5cab11f1ab2511cc5ffad1e2b51247160e415d81d05e04380e",
+  "calibration_endpoint_dataset_sha256": "9f5930456d1b45a9704a25bce8d5839637c9a9f7a7036597710e226068f6e9b2",
+  "candidate_observations": 180,
+  "deadband_multiplier": "0.25",
+  "deadband_value": "0.0058522295711611492",
+  "endpoint": "30-minute causal trailing VWAP, (T-30m,T]",
+  "estimation": "exactly 90 consecutive complete six-asset daily returns",
+  "exclusion_reasons": {},
+  "methodology_version": "v0.2",
+  "observations_excluded": 0,
+  "observations_used": 180,
+  "ols": "numpy.linalg.lstsq(design, response, rcond=None)",
+  "raw_gate_archives": [
+    {
+      "filename": "BCH_USDT-202506.csv.gz",
+      "sha256": "0a1c2f098ebaba4bb126e10d7456e70be634ffa879c013196b83ac8f2c520a0e"
+    },
+    {
+      "filename": "BCH_USDT-202507.csv.gz",
+      "sha256": "1f43ea4e7a0ec8cb226ec699df780e8a32883ddc51a9ed682ddf68cf71a20dd9"
+    },
+    {
+      "filename": "BCH_USDT-202508.csv.gz",
+      "sha256": "fe74aa542cf48ac7fbb464f7a3c189f1869b16717ff67cede408842419076b5d"
+    },
+    {
+      "filename": "BCH_USDT-202509.csv.gz",
+      "sha256": "63e5c53f015075904920798bc96f5ac3fecf6335ffb41f6de3ed2b2b3d41a07e"
+    },
+    {
+      "filename": "BCH_USDT-202510.csv.gz",
+      "sha256": "78096842c6c2aa36769af76052ccedc1d20d7f505deded3533f5486adb36b29b"
+    },
+    {
+      "filename": "BCH_USDT-202511.csv.gz",
+      "sha256": "4be46c6827553fc41dfbbbb7c253b22a3aed5c163265d992fc09a284b6711b37"
+    },
+    {
+      "filename": "BCH_USDT-202512.csv.gz",
+      "sha256": "3f9fba3dfaed293f687917c105760744e8999481b0a5a0df57ea157db97d9c4e"
+    },
+    {
+      "filename": "BCH_USDT-202601.csv.gz",
+      "sha256": "be26836052711e928202d2fd206b39e26f9f464e22b677950bf7e17d31966ddd"
+    },
+    {
+      "filename": "BCH_USDT-202602.csv.gz",
+      "sha256": "d1842c4ca7974c891279a66f146c3499a07358da1f386083a8a43ca27cb123bc"
+    },
+    {
+      "filename": "BSV_USDT-202506.csv.gz",
+      "sha256": "22d946b0bb1bca178fdef993788712fdb47e148ed04970660b732e60b254eb08"
+    },
+    {
+      "filename": "BSV_USDT-202507.csv.gz",
+      "sha256": "f791a88441f9245a5c5b3d8a2ece9f5d2f45d86393dc3e8ebc1b03671811b718"
+    },
+    {
+      "filename": "BSV_USDT-202508.csv.gz",
+      "sha256": "f51dc0cc9975fe7ebed7d354003ddd761c5d7365c0a26f16c6494a296ff17189"
+    },
+    {
+      "filename": "BSV_USDT-202509.csv.gz",
+      "sha256": "a6b4c2470dfd1f5f3170908a8566c11464a86664f4391713798fc5ac3b461803"
+    },
+    {
+      "filename": "BSV_USDT-202510.csv.gz",
+      "sha256": "1b6cf8c901bb0ca83205fa7faee62a1c2ee2cab3b17eb0ce8a976c2b3b16f2ea"
+    },
+    {
+      "filename": "BSV_USDT-202511.csv.gz",
+      "sha256": "431f90de21725b7ba3a3f505584ec90ad1b25060aab5e446ec1eef5e51dffa2b"
+    },
+    {
+      "filename": "BSV_USDT-202512.csv.gz",
+      "sha256": "6846016f2741c51471772d51676690aca2299dc414539a2063839a5a80ce278e"
+    },
+    {
+      "filename": "BSV_USDT-202601.csv.gz",
+      "sha256": "919c08048391e471ed6dae53747cc6c8828bece97f609417b6c1f9e9cc9cae78"
+    },
+    {
+      "filename": "BSV_USDT-202602.csv.gz",
+      "sha256": "69fde63571fa2b8bf65d0caf4bcb343535db6ddbd3988958f154b9de6a684f53"
+    },
+    {
+      "filename": "BTC_USDT-202506.csv.gz",
+      "sha256": "a5ddcd2df558dbebbd3ba449e0b93c3a72b9a652b50a1a015bdfc604e097384c"
+    },
+    {
+      "filename": "BTC_USDT-202507.csv.gz",
+      "sha256": "d3c91eeb6c9814607a416ad2fe61a558b9124e5fcc7a7c6efe9a82f231369f64"
+    },
+    {
+      "filename": "BTC_USDT-202508.csv.gz",
+      "sha256": "07609372ee0315100c0822a8f962953cee200a666ec69456159e506398e81d30"
+    },
+    {
+      "filename": "BTC_USDT-202509.csv.gz",
+      "sha256": "3c14578693babbd1f30fe5c3ef7c548806c9b1c2997293348378c7e4ce6a44fe"
+    },
+    {
+      "filename": "BTC_USDT-202510.csv.gz",
+      "sha256": "14f29523b33a3099c63b3d76a670cd8796ebd873b29eb044ef61592a5fcb991c"
+    },
+    {
+      "filename": "BTC_USDT-202511.csv.gz",
+      "sha256": "875abff718560844ea0f314f0c8e1dae984599640eb2325f467b12d26fd2f24e"
+    },
+    {
+      "filename": "BTC_USDT-202512.csv.gz",
+      "sha256": "a1c39af625d5bf0d2e94bc05d756ddfb347a37abc4091ac2096ee51d752bc4b7"
+    },
+    {
+      "filename": "BTC_USDT-202601.csv.gz",
+      "sha256": "4dedce0aa9811639bd0cf274c6c0034202f179a9e23d5c8be6fba94cac5f87b8"
+    },
+    {
+      "filename": "BTC_USDT-202602.csv.gz",
+      "sha256": "40e16fceee18069aa3262742a0674b37f1ee2f03c12bc9dade04bb7c5a40410b"
+    },
+    {
+      "filename": "DOGE_USDT-202506.csv.gz",
+      "sha256": "af502820e8d3a7198b5baf3bc1a8c40ba196887162752580e323b58794e48040"
+    },
+    {
+      "filename": "DOGE_USDT-202507.csv.gz",
+      "sha256": "07ded14e3bb68a22d7945df435570fda335b9ea3d8fbe32990ec0687cd2e97e7"
+    },
+    {
+      "filename": "DOGE_USDT-202508.csv.gz",
+      "sha256": "90277bb26eb3a03aa892aef8604001a33deced0b87601645e1754b42d7047cd8"
+    },
+    {
+      "filename": "DOGE_USDT-202509.csv.gz",
+      "sha256": "8ed3f2b26c0ab9bcaa9843e3069f1ed440056cf0db4eec1c03450bcdc2bb7788"
+    },
+    {
+      "filename": "DOGE_USDT-202510.csv.gz",
+      "sha256": "8b6d36fc63f4a98476f4a055e99a84457e8eca9e24b340d9e555e39044b0af44"
+    },
+    {
+      "filename": "DOGE_USDT-202511.csv.gz",
+      "sha256": "829f75ab61e84d82c0fcb0718c957a1223e699411380d09a7678d302ea56b904"
+    },
+    {
+      "filename": "DOGE_USDT-202512.csv.gz",
+      "sha256": "f6989a97de856a63fa5fb79f9ccc0adc5f2734695ef8a289df540093b708a001"
+    },
+    {
+      "filename": "DOGE_USDT-202601.csv.gz",
+      "sha256": "6cee83ea02eece059e7b25c40570492fde32246f845bb327d407f962cd9cc881"
+    },
+    {
+      "filename": "DOGE_USDT-202602.csv.gz",
+      "sha256": "a6cf53b2a4530863e48460fb1ef310290235ef207f520ef1114b9d2e86cfc4a3"
+    },
+    {
+      "filename": "ETC_USDT-202506.csv.gz",
+      "sha256": "a36690ff9d1c154d87836ab974ad25a021f21fec96672ee2a7fbe9cc3f21ffab"
+    },
+    {
+      "filename": "ETC_USDT-202507.csv.gz",
+      "sha256": "86f0c2a03952a804672f0e3f9483ac7aadaaf90d32626925a7ff845603d11186"
+    },
+    {
+      "filename": "ETC_USDT-202508.csv.gz",
+      "sha256": "2d2ed9210fc2deb4b20864c5a531fc08481d4d9bce6fc5ba776f189ec35ab232"
+    },
+    {
+      "filename": "ETC_USDT-202509.csv.gz",
+      "sha256": "d2cafc5fad156c3ed386f94d1f34d36d39b7c102ceb241d30d4a186c053281ca"
+    },
+    {
+      "filename": "ETC_USDT-202510.csv.gz",
+      "sha256": "22b38ffc5a0bb7303424484eb604330e1ad1c336f3eeadcc81d43105edd8c2b0"
+    },
+    {
+      "filename": "ETC_USDT-202511.csv.gz",
+      "sha256": "bf0e22877c6cd9670a1861a0df8678dc7c9a9b543f4eff6c060ed2a01c3f3006"
+    },
+    {
+      "filename": "ETC_USDT-202512.csv.gz",
+      "sha256": "cad56b64694f5a264a8a208bdda1e953ad97aac8035ddd3fe70a890cde7d7e24"
+    },
+    {
+      "filename": "ETC_USDT-202601.csv.gz",
+      "sha256": "4692970804c3cc9c737b15868a1341f113407f3f382b07bfe52f7afb1634e645"
+    },
+    {
+      "filename": "ETC_USDT-202602.csv.gz",
+      "sha256": "66ab7b33432730c06dd326c978b21881ef62e2e15a4d16867cf8aa253a81332e"
+    },
+    {
+      "filename": "LTC_USDT-202506.csv.gz",
+      "sha256": "614c3a534a456ea4553090308f3677e5228e67476b6df3daec45723b8eb9003f"
+    },
+    {
+      "filename": "LTC_USDT-202507.csv.gz",
+      "sha256": "c71d4145f7084880cbd4ca51457f0dae245e4d7d5ad8ba1fdfe78ea92f63f7d3"
+    },
+    {
+      "filename": "LTC_USDT-202508.csv.gz",
+      "sha256": "f47f4714aa8885e93808029b4ad9f227aa4ac63d06dc8625f0fd7af9d1d35c49"
+    },
+    {
+      "filename": "LTC_USDT-202509.csv.gz",
+      "sha256": "129cd70c646fd32a4d3712cadce77f4764b6081a597c27856f2c42d3fecea817"
+    },
+    {
+      "filename": "LTC_USDT-202510.csv.gz",
+      "sha256": "decacfbe530f6c564e33ca014b6328fa54e15abef8e443e95167983cd0d1a989"
+    },
+    {
+      "filename": "LTC_USDT-202511.csv.gz",
+      "sha256": "e902f3540bf392c433221366db93ddb1b433218c778b992bb65312c6fbe04dea"
+    },
+    {
+      "filename": "LTC_USDT-202512.csv.gz",
+      "sha256": "bf5ee08711ca92193b2a82cbda64d8a1da0ef6a06f0799c43ad36fd5525dfe66"
+    },
+    {
+      "filename": "LTC_USDT-202601.csv.gz",
+      "sha256": "68c0ce683a706c236b792928b5f51e93c35d0cb6345586edcb44c6ce49a4e0b4"
+    },
+    {
+      "filename": "LTC_USDT-202602.csv.gz",
+      "sha256": "cd7b13a0101fe946270e6bea9e7d0547fb7928ce23abcbbec8455c4ff8148966"
+    }
+  ],
+  "residual_sigma_ddof_1": "0.023408918284644597",
+  "runtime": {
+    "architecture": "x86_64",
+    "files_sha256": {
+      "SHA256SUMS": "ad8d70f594adc75afc55783dbd05a9390e216140bfaf2119feed8e27e82bdfe5",
+      "numpy-config.txt": "4a4e9642b0ec10394c454053f8df6c816948a47ab5a29b079a88f0e2c1d1bae7",
+      "platform.txt": "5028d67f068ebf6e087bc89c88b5bc801525265f57e88ecb53c8beace47d0cdc",
+      "python-version.txt": "63990b3ee50c49ab28d70e29c0f967f0c71330e39243ffeb4d3a8d5878c8a978",
+      "requirements.lock": "479c30179f7e62d697ca3c8af0d8943454ebc276052024d61824e0453c54bf16",
+      "runtime.env": "2a987f0cc1d4386492dc770acef56b5eccbe261ed30b39f54f7481cbdaca1b95"
+    },
+    "numpy": "2.5.2",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.43",
+    "python": "3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]"
+  },
+  "schema": "bsv-signal-deadband-calibration/2",
+  "status": "COMPLETE"
+}
