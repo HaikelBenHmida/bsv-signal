@@ -1,0 +1,70 @@
+{
+  "_comment": "Detached final lock manifest for BSV Signal v0.2. Published before Observation #1; do not replace or revise the v0.1 lock or calibration artifacts.",
+  "schema": "bsv-signal-lock-manifest/2",
+  "methodology_version": "v0.2",
+  "taxonomy_version": "v0.1",
+  "locked_at": "2026-09-04T11:27:48Z",
+  "documents": {
+    "methodology_filename": "METHODOLOGY-v0.2.md",
+    "methodology_sha256": "e37deb53808ef8479a7d291da300c5ca6296d4c02270f976a26a5f0a0409b0b3",
+    "base_methodology_filename": "METHODOLOGY-v0.1.md",
+    "base_methodology_sha256": "e32358342fb14246a4c6ec8e3b975e224899d41f5bd1d396a0143c803e68bd97",
+    "taxonomy_filename": "EVENT_TAXONOMY-v0.1.md",
+    "taxonomy_sha256": "01f540efa680955e6c67fc1e402d8f02ed10d5641dc415bb795c90be6e6e1b87"
+  },
+  "provenance": {
+    "v0_1_calibration_failure": {
+      "filename": "artifacts/calibration_summary_v0.1.json",
+      "sha256": "2db4389467d27bd5d5311d4e5dbd2c96f120a6b3430a2e4514fef678968c93ef",
+      "status": "BLOCKED_INSUFFICIENT_VALID_OBSERVATIONS",
+      "candidate_observations": 180,
+      "observations_used": 0,
+      "observations_excluded": 180
+    },
+    "feas_001": {
+      "study_id": "BSVS-FEAS-001",
+      "filename": "artifacts/feasibility/feasibility_summary.json",
+      "sha256": "f859143a28eb6c82ac0fb0b87afefad8e8c52564a0b291fdd6a12733447cba6a"
+    },
+    "feas_002": {
+      "study_id": "BSVS-FEAS-002",
+      "filename": "artifacts/feasibility-vwap/feasibility_summary.json",
+      "sha256": "cb1fd4dff1f0932f7f18e401923f2a692879fb2c5390a4b7906a28c767130e35",
+      "selected_window_minutes": 30,
+      "diagnostic_only_window_minutes": 60,
+      "fallback_regime_evaluated_but_not_adopted": "most recent 90 jointly valid six-asset 24h returns with both endpoints in [T-120d,T]",
+      "selected_window_usable_dates_original_90_consecutive_regime": 180,
+      "candidate_calibration_dates": 180
+    }
+  },
+  "endpoint": {
+    "venue": "Gate",
+    "price_type": "causal trailing quote-notional VWAP",
+    "window_minutes": 30,
+    "left_boundary": "exclusive",
+    "right_boundary": "inclusive",
+    "contributing_trade_hash": "SHA-256"
+  },
+  "estimation": {
+    "primary_regime": "exactly 90 consecutive complete six-asset daily returns ending at T"
+  },
+  "deadband": {
+    "method": "0.25 * sigma(residual_24h)",
+    "value": 0.0058522295711611492,
+    "calibration_start": "2025-09-01T00:00:00Z",
+    "calibration_end": "2026-02-28T23:59:59Z",
+    "required_price_history_start": "2025-06-03T08:00:00Z",
+    "first_calibration_date": "2025-09-01T08:00:00Z",
+    "last_calibration_date": "2026-02-27T08:00:00Z",
+    "candidate_observations": 180,
+    "calibration_observations_used": 180,
+    "calibration_observations_excluded": 0,
+    "calibration_dataset_sha256": "337642e364714b5cab11f1ab2511cc5ffad1e2b51247160e415d81d05e04380e",
+    "calibration_endpoint_dataset_sha256": "9f5930456d1b45a9704a25bce8d5839637c9a9f7a7036597710e226068f6e9b2"
+  },
+  "publication": {
+    "telegram_channel": "https://t.me/+Cx6QcsnHmEM2ODBk",
+    "telegram_message_ref": "https://t.me/c/4285059464/6",
+    "archive_url": "https://github.com/HaikelBenHmida/bsv-signal/releases/tag/v0.2-lock"
+  }
+}
